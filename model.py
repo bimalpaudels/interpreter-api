@@ -14,5 +14,6 @@ class ResponseModel(BaseModel):
 
 class BaseResponse(BaseModel):
     success: bool = True
+    message: str | None = None
     type: str
-    data: ExceptionModel | ResponseModel
+    data: ExceptionModel | ResponseModel | None = None

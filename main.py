@@ -1,10 +1,13 @@
 from fastapi import FastAPI, status
 from starlette.responses import JSONResponse
 
+from config import configure_app, global_exception_handler
 from service import execution_flow
 from model import CodeRequest
 
 app = FastAPI()
+configure_app(app)
+app.add_exception_handler(Exception, global_exception_handler)
 
 @app.get("/")
 async def root():
