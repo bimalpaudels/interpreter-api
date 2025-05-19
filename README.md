@@ -10,7 +10,7 @@ The API provides an endpoint to submit code and receive output, making it ideal 
 ## Demo 
 The frontend of this demo is hosted in Vercel.
 
-[![Demo](https://github.com/user-attachments/assets/9f679859-5afa-49dd-b771-048452a2d7e9)](https://dotpy.bimals.net)
+[![Demo](https://github.com/user-attachments/assets/d4677842-33a2-42a7-88f9-80c300357a97)](https://dotpy.bimals.net)
 
 ## Features
 - "Sandboxed" Python execution.
