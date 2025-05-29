@@ -345,11 +345,11 @@ wheels = [
 
 [[package]]
 name = "restricted"
-version = "0.2.0"
+version = "0.2.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/c6/e1/89988a8980e9e3dab5412d7e95faf059d039de46e064865e9ba5a117e167/restricted-0.2.0.tar.gz", hash = "sha256:478bdfb112a6a39820d6b837c26c83cb50e1666124d12f6c62573bd0e91262d2", size = 7020, upload_time = "2025-05-29T15:38:33.297Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e4/fa/cd2d2e46d02110561c312fb016c6149dfd3a595b47895d8d759d211e9dfd/restricted-0.2.1.tar.gz", hash = "sha256:0bf5651ba8a27eab16eaee15ac01e0a5e208a24b87c1707f626ffc647542994d", size = 8671, upload_time = "2025-05-29T21:25:54.91Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/00/ae/1eb0daddf156b598608ef5209fc962d3ad62cc38dead0b75c94a207b0741/restricted-0.2.0-py3-none-any.whl", hash = "sha256:a1004182b4e99cff87cca69a5ec6f6d22dc0e6b51b691031abcaf6c7bc9b7ac5", size = 7687, upload_time = "2025-05-29T15:38:31.826Z" },
+    { url = "https://files.pythonhosted.org/packages/c3/61/8f755b0aa943ac97ef8dfbf5a3d12d52f38fd4d25aea2de7d7f4d47c5422/restricted-0.2.1-py3-none-any.whl", hash = "sha256:2890cd0c7b92e7d1e2e996e0af8c0bffc2b7789bb08964e68cd5c6bde920362e", size = 9488, upload_time = "2025-05-29T21:25:53.383Z" },
 ]
 
 [[package]]
