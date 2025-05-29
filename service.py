@@ -3,10 +3,10 @@ from model import BaseResponse, ExceptionModel, ResponseModel
 
 
 def execution_flow(code):
-    restricted = ["os", "sys", "open", "pathlib"]
+    whitelist = ["print"]
     try:
         response = execute_restricted(
-            code.get("code"), method="uv", restrict=restricted
+            code.get("code"), method="uv", whitelist=whitelist
         )
         return BaseResponse(
             data=ResponseModel(output=response),
