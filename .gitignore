@@ -9,3 +9,12 @@ wheels/
 # Virtual environments
 .venv
 .idea/
+
+# Ruff
+.ruff_cache/
+
+# DS Store
+.DS_Store
+
+# Sandbox
+.sandbox/

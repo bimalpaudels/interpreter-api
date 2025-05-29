@@ -3,21 +3,16 @@ from model import BaseResponse, ExceptionModel, ResponseModel
 
 
 def execution_flow(code):
+    restricted = ["os", "sys", "open", "pathlib"]
     try:
-        response = execute_restricted(code.get('code'))
+        response = execute_restricted(
+            code.get("code"), method="uv", restrict=restricted
+        )
         return BaseResponse(
             data=ResponseModel(output=response),
             success=True,
             type="normal",
         ).model_dump()
     except Exception as e:
-        response = ExceptionModel(
-            name=e.__class__.__name__,
-            output=str(e)
-        )
-        return BaseResponse(
-            data=response,
-            success=True,
-            type="exception"
-        ).model_dump()
-
+        response = ExceptionModel(name=e.__class__.__name__, output=str(e))
+        return BaseResponse(data=response, success=True, type="exception").model_dump()
